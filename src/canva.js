@@ -87,7 +87,7 @@ class CanvasSenpai {
     ctx.fillText(`${name}`, 730, 35);
     ctx.fillText(`#${discriminator}`, 730, 69.5);
 
-    return canvas.toBuffer();
+    return canvas;
   }
 
 
@@ -181,7 +181,7 @@ class CanvasSenpai {
     // Draw a shape onto the main canvas
     ctx.drawImage(avatar, 72, 48, 150, 150);
 
-    return canvas.toBuffer();
+    return canvas;
   }
 
   /**
@@ -320,7 +320,7 @@ class CanvasSenpai {
       level.length > 6 ? level.substring(0, 6).trim() + "+" : level;
     ctx.fillText(`${levelN}`, 500, 210);
 
-    return canvas.toBuffer();
+    return canvas;
   }
 
   }
